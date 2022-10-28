@@ -143,8 +143,8 @@ class Orders {
       const ordermongo=lastorder._id;
       const orderinvoce=lastorder.invoiceid;
       //seller sms
-      const accountSid = "AC9ea9eca1fc017cf732e9940dd276c5a4"; // Your Account SID from www.twilio.com/console
-      const authToken = "199592c7416519635d0f80951fcee283"; // Your Auth Token from www.twilio.com/console
+      const accountSid = "123"; // Your Account SID from www.twilio.com/console
+      const authToken = "123"; // Your Auth Token from www.twilio.com/console
 
       const twilio = require("twilio");
       const client = new twilio(accountSid, authToken);
@@ -350,8 +350,8 @@ class Orders {
         });
 
       //Buyer sms
-      const buyeraccountSid = "AC9ea9eca1fc017cf732e9940dd276c5a4"; // Your Account SID from www.twilio.com/console
-      const buyerauthToken = "199592c7416519635d0f80951fcee283"; // Your Auth Token from www.twilio.com/console
+      const buyeraccountSid = "123"; // Your Account SID from www.twilio.com/console
+      const buyerauthToken = "123"; // Your Auth Token from www.twilio.com/console
 
       const buyertwilio = require("twilio");
       const buyerclient = new buyertwilio(buyeraccountSid, buyerauthToken);
@@ -1006,8 +1006,8 @@ class Orders {
   }
 
   async sendsms(req, res) {
-    const accountSid = "AC9ea9eca1fc017cf732e9940dd276c5a4"; // Your Account SID from www.twilio.com/console
-    const authToken = "199592c7416519635d0f80951fcee283"; // Your Auth Token from www.twilio.com/console
+    const accountSid = "123"; // Your Account SID from www.twilio.com/console
+    const authToken = "123"; // Your Auth Token from www.twilio.com/console
 
     const twilio = require("twilio");
     const client = new twilio(accountSid, authToken);
@@ -2407,8 +2407,8 @@ class Orders {
         const lastorder = await Order.findOne({}).sort({ _id: -1 }).limit(1);
         const orderid = lastorder.id;
         const ordermongo=lastorder._id;
-        const accountSid = "AC9ea9eca1fc017cf732e9940dd276c5a4"; // Your Account SID from www.twilio.com/console
-        const authToken = "199592c7416519635d0f80951fcee283"; // Your Auth Token from www.twilio.com/console
+        const accountSid = "123"; // Your Account SID from www.twilio.com/console
+        const authToken = "123"; // Your Auth Token from www.twilio.com/console
         const twilio = require("twilio");
         const client = new twilio(accountSid, authToken);
 
@@ -2613,8 +2613,8 @@ class Orders {
           });
 
         //Buyer sms
-        const buyeraccountSid = "AC9ea9eca1fc017cf732e9940dd276c5a4"; // Your Account SID from www.twilio.com/console
-        const buyerauthToken = "199592c7416519635d0f80951fcee283"; // Your Auth Token from www.twilio.com/console
+        const buyeraccountSid = "123"; // Your Account SID from www.twilio.com/console
+        const buyerauthToken = "123"; // Your Auth Token from www.twilio.com/console
 
         const buyertwilio = require("twilio");
         const buyerclient = new buyertwilio(buyeraccountSid, buyerauthToken);
